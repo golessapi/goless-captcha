@@ -9,3 +9,4 @@ test_lp.json
 .eslintrc
 config/
 config/test.js
+package-lock.json 
