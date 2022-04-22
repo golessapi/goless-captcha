@@ -1,0 +1,36 @@
+{
+  "name": "goless-captcha",
+  "version": "1.0.0",
+  "description": "Goless.com captcha solver interface",
+  "main": "solver.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test NODE_CONFIG_DIR=$(pwd)/config ava --serial tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/golessapi/goless-captcha.git"
+  },
+  "keywords": [
+    "Captcha",
+    "solver",
+    "goless"
+  ],
+  "author": "Goless.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/golessapi/goless-captcha/issues"
+  },
+  "homepage": "https://github.com/golessapi/goless-captcha#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "debug": "^4.3.4",
+    "request": "^2.88.2",
+    "requestretry": "^7.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2"
+  }
+}
