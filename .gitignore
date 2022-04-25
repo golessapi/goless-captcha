@@ -7,6 +7,6 @@ log/*.log
 checker_result.html
 test_lp.json
 .eslintrc
-# config/
-# config/test.js
+config/
+config/test.js
 package-lock.json 
