@@ -1,5 +1,3 @@
-'use strict';
-
 import test from 'ava';
 const config = require('config');
 

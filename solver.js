@@ -38,14 +38,19 @@ class Solver {
       retryDelay: 5000,
     });
 
+    if (response.statusCode == 401) {
+      throw new Error(`Invalid auth token.`);
+    }
+
+
     if (response.statusCode !== 200) {
-      throw new Error('Non 200 captcha.goless.com response');
+      throw new Error(`Non 200 captcha.goless.com response (${response.statusCode}).`);
     }
 
     const taskUuid = response.body.uuid;
 
     if (!taskUuid) {
-      throw new Error('Empty captcha.goless.com task uuid');
+      throw new Error('Empty captcha.goless.com task uuid.');
     }
 
     return this.getResult(taskUuid);
