@@ -1,15 +1,23 @@
 # Goless.com Captcha solver
 
+## Installation
+`npm i -s goless-captcha`
+
 ## Usage
 ```js
-const GolessCaptchaSolver = require('../solver.js');
+const GolessCaptchaSolver = require('goless-captcha');
 
 const solver = new GolessCaptchaSolver({
-	token: 'y0ur-ap1-t0ken',
+	token: '	',
 	limit: 10, // 10 seconds limit to solve. if not solved - throw error
 });
 
-const guess = await solver.solve({
-	image: 'base64 encoded image...',
-})
+try {
+	const guess = await solver.solve({
+		image: 'base64 encoded image...',
+	})	
+} catch (e) {
+	// do something with solver error
+}
+
 ```
