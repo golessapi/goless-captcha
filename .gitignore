@@ -1,4 +1,5 @@
 node_modules
+config/test.cjs
 error-page*
 .idea
 log/*.log
@@ -10,5 +11,4 @@ test_lp.json
 config/
 config/*
 config/test.js
-config/test.cjs
 package-lock.json 
